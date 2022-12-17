@@ -27,11 +27,20 @@ const animationTimeline = () => {
   };
 
   const tl = new TimelineMax();
+  // const tl2 = new TimelineMax({repeat:-1});
+
+  // tl.to("#body", 0,{css:{backgroundImage:'url(https://i.ibb.co/rc9SpLK/of.png)'}})
+  // tl.from("#body", 100,{css:{backgroundImage:'url(https://i.ibb.co/rc9SpLK/of.png)',t, height: "100%"}})
+  // tl.to("#body", 1000,{opacity:0})
 
   tl
     .to(".container", 0.1, {
       visibility: "visible"
     })
+    
+   
+    // .from("#bdimg", 100,{css:{backgroundImage:'url(https://i.ibb.co/rc9SpLK/of.png)',imagePosition: "-7200px 0px", ease:Linear.easeNone}},"+=4")
+    
     .from(".one", 0.7, {
       opacity: 0,
       y: 10
@@ -49,6 +58,7 @@ const animationTimeline = () => {
       },
       "+=2.5"
     )
+    
     .to(
       ".two",
       0.7,
@@ -102,9 +112,9 @@ const animationTimeline = () => {
       "+=0.7"
     )
     .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-1", 0.7, ideaTextTransLeave, "+=2")
     .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-2", 0.7, ideaTextTransLeave, "+=2")
     .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
       scale: 1.2,
@@ -112,9 +122,9 @@ const animationTimeline = () => {
       backgroundColor: "rgb(21, 161, 237)",
       color: "#fff"
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-3", 0.7, ideaTextTransLeave, "+=2")
     .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-4", 0.7, ideaTextTransLeave, "+=2")
     .from(
       ".idea-5",
       0.7,
@@ -146,29 +156,88 @@ const animationTimeline = () => {
       },
       "+=2"
     )
-    .staggerFrom(
-      ".idea-6 span",
-      0.8,
-      {
-        scale: 3,
-        opacity: 0,
-        rotation: 15,
-        ease: Expo.easeOut
-      },
-      0.2
-    )
-    .staggerTo(
-      ".idea-6 span",
-      0.8,
-      {
-        scale: 3,
-        opacity: 0,
-        rotation: -15,
-        ease: Expo.easeOut
-      },
-      0.2,
-      "+=1"
-    )
+
+
+    .from(".idea-6 span", 0.7, ideaTextTrans)
+    .to(".idea-6 span", 0.7, ideaTextTransLeave, "+=5")
+
+
+    // .staggerFrom(
+    //   ".idea-6 span",
+    //   0.8,
+    //   {
+    //     scale: 3,
+    //     opacity: 0,
+    //     rotation: 15,
+    //     ease: Expo.easeOut
+    //   },
+    //   0.2
+    // )
+    // .staggerTo(
+    //   ".idea-6 span",
+    //   0.8,
+    //   {
+    //     scale: 3,
+    //     opacity: 0,
+    //     rotation: -15,
+    //     ease: Expo.easeOut
+    //   },
+    //   0.2,
+    //   "+=1"
+    // )
+// ------------------------------
+    // .from("#cont1", 0.7, ideaTextTrans)
+    // .to("#cont1", 0.7, ideaTextTransLeave, "+=3.5")
+
+    // .from("#cont1", 0.7, {
+    //   opacity: 0,
+    //   y: 100,
+    //   duration:1,
+    //   visibility: "visible"
+    //   // scale: 0.7
+    // })
+
+    .from("#cont1", 0.7, ideaTextTrans)
+    .to("#cont1", 0.7, ideaTextTransLeave, "+=5")
+
+    .from("#cont2", 0.7, ideaTextTrans)
+    .to("#cont2", 0.7, ideaTextTransLeave, "+=5")
+
+
+    .from("#cont3", 0.7, ideaTextTrans)
+    .to("#cont3", 0.7, ideaTextTransLeave, "+=5")
+
+    .from("#cont4", 0.7, ideaTextTrans)
+    .to("#cont4", 0.7, ideaTextTransLeave, "+=5")
+
+    .from("#cont5", 0.7, ideaTextTrans)
+    .to("#cont5", 0.7, ideaTextTransLeave, "+=5")
+
+    .from("#cont6", 0.7, ideaTextTrans)
+    .to("#cont6", 0.7, ideaTextTransLeave, "+=5")
+
+    .from("#cont7", 0.7, ideaTextTrans)
+    .to("#cont7", 0.7, ideaTextTransLeave, "+=5")
+
+    .from("#cont8", 0.7, ideaTextTrans)
+    .to("#cont8", 0.7, ideaTextTransLeave, "+=5")
+
+
+
+
+
+    // .pause(4)
+    // .play()
+
+
+// -----------------------------
+    
+// 
+// 
+    // .from("#butt", 0.7, ideaTextTrans)
+    // .to("#butt", 0.7, ideaTextTransLeave, "+=2")
+
+
     .staggerFromTo(
       ".baloons img",
       2.5,
@@ -182,14 +251,21 @@ const animationTimeline = () => {
       },
       0.2
     )
+
+    
+    // tl.from("#body", 100,{css:{backgroundImage:'url(https://i.ibb.co/K7qmTkD/Artboard-1.jpg)',backgroundPosition: "-2247px 0px", ease:Linear.easeNone }})
+    // tl.to("#body", 1,{css:{backgroundImage:'url(https://github.com/gijoerise4/bday_project/blob/master/img/of.png)'}})
+
+    .to("#bdimg",0.4,{visibility:"visible"},">")
+
     .from(
       ".lydia-dp",
       0.5,
       {
-        scale: 3.5,
+        scale: 3,
         opacity: 0,
         x: 25,
-        y: -25,
+        y: 0,
         rotationZ: -45
       },
       "-=2"
@@ -251,6 +327,8 @@ const animationTimeline = () => {
       },
       0.3
     )
+
+
     .to(".six", 0.5, {
       opacity: 0,
       y: 30,
@@ -262,12 +340,38 @@ const animationTimeline = () => {
       0.5,
       {
         rotation: 90
-      },
+      },  
       "+=1"
-    );
+    )
+    // .to("body", 1000,{opacity:1})
+  //   tl.pause()
+  // const tl2 = new TimelineMax({repeat:-1})
+  // tl2.from("#bdimg", 3,{css:{backgroundImage:'url(https://i.ibb.co/rc9SpLK/of.png)'}})
 
+  // tl2.from("#bg", 100,{css:{backgroundImage:'url(https://i.ibb.co/rc9SpLK/of.png)',backgroundPosition: "-10080px 0px", ease:Linear.easeNone, height: "100%"}},"+=4")
+
+    // .to("#body", 2,
+    //   // backgroundImage
+    //   {css:{
+    //   background-image: url("https://i.ibb.co/K7qmTkD/Artboard-1.jpg"),
+    //   background-repeat: repeat,
+    //   animation: marquee 30s infinite linear,
+    // }}
+    // )
+    
+    // tl2.to("#body", 100,{css:{backgroundImage:'url(https://i.ibb.co/K7qmTkD/Artboard-1.jpg)',backgroundPosition: "-2247px 0px", ease:Linear.easeNone }})
+
+    // body.addEventListener(mouseclick, ()=> tl.pause())
   // tl.seek("currentStep");
   // tl.timeScale(2);
+
+  $("#body").click(function(){
+    tl.paused(!tl.paused());
+    tl.paused();
+    // tl.restart();
+    });
+
+
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
