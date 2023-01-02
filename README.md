@@ -2,7 +2,7 @@
 
 ### Wish someone special happy birthday in a special way.
 
-#### [See it Live](https://ksonone.github.io/happy-birthday/)
+#### [See it Live](https://gijoerise4.github.io/bday_project/)
 
 It was a birthday of one of my friend and I wanted to wish him in a special way. So I put together this animated web page real quick to say Happy Birthday.
 
@@ -25,4 +25,4 @@ If you have any idea to make it more interesting, feel free to send a PR, or cre
 Stay happy and keep the people you care about happy. :)
 
 ## Special Thanks to 
-####[faahim](https://github.com/faahim/happy-birthday/) who designed this project.
+####[faahim](https://github.com/faahim/happy-birthday/), [ksonone](https://github.com/ksonone/happy-birthday) .
